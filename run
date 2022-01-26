@@ -1,0 +1,7 @@
+#!/bin/bash
+
+function go {
+  docker-compose run --rm app go "${@}"
+}
+
+eval "$@"
