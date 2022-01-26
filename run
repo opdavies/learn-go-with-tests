@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function ci:test {
+  go test "${@}"
+}
+
 function go {
   docker-compose run --rm app go "${@}"
 }
