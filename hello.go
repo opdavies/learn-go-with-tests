@@ -11,11 +11,13 @@ func Hello(name string, language string) string {
 		name = "World"
 	}
 
+	prefix := englishHelloPrefix
+
 	if language == welsh {
-		return welshHelloPrefix + name
+		prefix = welshHelloPrefix
 	}
 
-	return englishHelloPrefix + name
+	return prefix + name
 }
 
 func main() {
